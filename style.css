@@ -1,0 +1,193 @@
+*{
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+
+.navbar-text{
+    color: beige;
+    transition: font-size 0.5s;
+    transition-duration: 2ms;
+    transition-duration: 2ms;
+  }
+.navbar-text:hover {
+    color: #d97706;
+}
+
+  /*--------------------------------------------------------------
+# hero
+--------------------------------------------------------------*/
+.bck{
+    background-image: url('./assets/background-3.jpg');
+    background-color: #111827;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+  }
+.heroTitle{
+    color: #ff8a04;
+}
+.heroButton:hover{
+    background-color: #030712;
+}
+.aboutText{
+    font-size: 4rem;
+}
+.aboutName{
+    background-color: #d97706;
+}
+.aboutLink{
+    color: #d97706;
+}
+.progress-bar {
+    background-color: #d97706;
+}
+
+  /*--------------------------------------------------------------
+# services
+--------------------------------------------------------------*/
+.iconBox:hover {
+    color: #ffc451;
+  }
+  .iconBox{
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .iconBox:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+    transition-duration: 0.5s;
+
+  }
+
+
+  /*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio .portfolio-item {
+    margin-bottom: 30px;
+  }
+  /* .portfolio #portfolio-flters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+  } */
+  .portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    /* color: #444444; */
+    color: #ffff;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+  }
+  .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+    color: #151515;
+    background: #ffc451;
+  }
+  /* .portfolio #portfolio-flters li:last-child {
+    margin-right: 0;
+  } */
+  .portfolio .portfolio-wrap {
+    transition: 0.3s;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(21, 21, 21, 0.6);
+  }
+  .portfolio .portfolio-wrap::before {
+    content: "";
+    background: rgba(21, 21, 21, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
+  .portfolio .portfolio-wrap img {
+    transition: all ease-in-out 0.3s;
+  }
+  .portfolio .portfolio-wrap .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .portfolio .portfolio-wrap .portfolio-info h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .portfolio .portfolio-wrap .portfolio-info p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+  }
+  /* .portfolio .portfolio-wrap .portfolio-links {
+    text-align: center;
+    z-index: 4;
+  } */
+  /* .portfolio .portfolio-wrap .portfolio-links a {
+    color: #fff;
+    margin: 0 5px 0 0;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+  } */
+  /* .portfolio .portfolio-wrap .portfolio-links a:hover {
+    color: #ffc451;
+  } */
+  .portfolio .portfolio-wrap:hover::before {
+    opacity: 1;
+  }
+  .portfolio .portfolio-wrap:hover img {
+    transform: scale(1.2);
+  }
+  .portfolio .portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+  }
+
+  /* footer icon */
+  .footerIcon{
+    background-color: #111827;
+  }
+  .footerIcon:hover{
+    background-color: #d97706;
+  }
+  
